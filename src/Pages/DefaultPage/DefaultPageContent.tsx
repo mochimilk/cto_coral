@@ -5,8 +5,6 @@ import { Link } from "../../Imports/bundleIcons.tsx";
 import { useContentHooks } from "../../Hooks/useContentHooks.tsx";
 import ContentToolbar from "../../Hooks/useContentToolbarHooks.tsx";
 
-// Visit https://mochimilk.github.io/cto_coral_docs/index.html#/developers/content for documentation
-
 interface ContentProps {
   isPanelOpen: boolean;
   togglePanel?: () => void; // Optional to conditionally render left toggle
@@ -26,8 +24,9 @@ const ContentDevelopers: React.FC<ContentProps> = ({
     <div className="contentContainer">
       {/*📌 Below is the setup for the content toolbar.
        ***You may remove this if your app doesn't need a toolbar. */}
-      <ContentToolbar
-        panelConfig="both" // "left", "right", "both", {null}
+
+<ContentToolbar
+        panelConfig="both" // If your page is only using one panel, define it here with "left" or "right". Removing this defaults to both.
         isPanelOpen={isPanelOpen}
         togglePanel={togglePanel}
         isRightPanelOpen={isRightPanelOpen}
@@ -40,11 +39,12 @@ const ContentDevelopers: React.FC<ContentProps> = ({
         </Toolbar>
       </ContentToolbar>
 
+      {/*📌 Below is the setup for Content.
+       ***You can import just about anything into className"content" and it should show up in the content panel
+       ***Don't forget call your import above!
+       ***/}
 
-
-      <div className="content">
-        {/* Replace with Panel Content */}
-      </div>
+      <div className="content"></div>
     </div>
   );
 };

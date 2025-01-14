@@ -53,3 +53,40 @@ body {
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
 }
+
+p,
+ol,
+ul,
+li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+
+code {
+  font-size: 0.9rem;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}

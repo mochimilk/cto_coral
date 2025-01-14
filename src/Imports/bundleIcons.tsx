@@ -1,20 +1,27 @@
+//DEV NOTES:
+// 1) It's recommended to create bundleIcons for icons that nest within Fluent components and then import them into your project.
+
 import {
-  ArrowExitRegular,
   ArrowExitFilled,
-  PersonRegular,
-  PersonFilled,
-  PersonFeedbackRegular,
-  PersonFeedbackFilled,
-  LeafOneRegular,
-  LeafOneFilled,
-  FlowRegular,
-  FlowFilled,
-  BeakerRegular,
+  ArrowExitRegular,
   BeakerFilled,
-  WeatherSunnyRegular,
-  WeatherSunnyFilled,
-  WeatherMoonRegular,
-  WeatherMoonFilled,
+  BeakerRegular,
+  CodeFilled,
+  CodeRegular,
+  DesignIdeasFilled,
+  DesignIdeasRegular,
+  FlowFilled,
+  FlowRegular,
+  FolderOpenFilled,
+  FolderOpenRegular,
+  LeafOneFilled,
+  LeafOneRegular,
+  LinkFilled,
+  LinkRegular,
+  OpenFilled,
+  OpenRegular,
+  OrganizationHorizontalFilled,
+  OrganizationHorizontalRegular,
   PanelLeftContractFilled,
   PanelLeftContractRegular,
   PanelLeftExpandFilled,
@@ -23,49 +30,38 @@ import {
   PanelRightContractRegular,
   PanelRightExpandFilled,
   PanelRightExpandRegular,
-  ShareFilled,
-  ShareRegular,
+  PersonFilled,
+  PersonRegular,
+  PersonFeedbackFilled,
+  PersonFeedbackRegular,
   SearchFilled,
   SearchRegular,
-  CodeRegular,
-  CodeFilled,
-  DesignIdeasFilled,
-  DesignIdeasRegular,
-  bundleIcon,
-  FolderOpenFilled,
-  FolderOpenRegular,
-  OpenFilled,
-  OpenRegular,
+  ShareFilled,
+  ShareRegular,
   TreeDeciduousFilled,
   TreeDeciduousRegular,
   TreeEvergreenFilled,
   TreeEvergreenRegular,
-  LinkFilled,
-  LinkRegular,
-  OrganizationHorizontalFilled,
-  OrganizationHorizontalRegular
+  WeatherMoonFilled,
+  WeatherMoonRegular,
+  WeatherSunnyFilled,
+  WeatherSunnyRegular,
+  bundleIcon
 } from "@fluentui/react-icons";
 
-export const Link = bundleIcon(LinkFilled, LinkRegular);
-export const OrganizationHorizontal = bundleIcon(OrganizationHorizontalFilled, OrganizationHorizontalRegular);
-export const TreeDeciduous = bundleIcon(TreeDeciduousFilled, TreeDeciduousRegular);
-export const TreeEvergreen = bundleIcon(TreeEvergreenFilled, TreeEvergreenRegular);
-export const FolderOpen = bundleIcon(FolderOpenFilled, FolderOpenRegular);
-export const Open = bundleIcon(OpenFilled, OpenRegular);
 export const ArrowExit = bundleIcon(ArrowExitFilled, ArrowExitRegular);
+export const Beaker = bundleIcon(BeakerFilled, BeakerRegular);
 export const Code = bundleIcon(CodeFilled, CodeRegular);
 export const DesignIdeas = bundleIcon(DesignIdeasFilled, DesignIdeasRegular);
-export const Person = bundleIcon(PersonFilled, PersonRegular);
-export const PersonFeedback = bundleIcon(
-  PersonFeedbackFilled,
-  PersonFeedbackRegular
-);
-export const LeafOne = bundleIcon(LeafOneFilled, LeafOneRegular);
-export const Share = bundleIcon(ShareFilled, ShareRegular);
 export const Flow = bundleIcon(FlowFilled, FlowRegular);
-export const Beaker = bundleIcon(BeakerFilled, BeakerRegular);
-export const WeatherSunny = bundleIcon(WeatherSunnyFilled, WeatherSunnyRegular);
-export const WeatherMoon = bundleIcon(WeatherMoonFilled, WeatherMoonRegular);
+export const FolderOpen = bundleIcon(FolderOpenFilled, FolderOpenRegular);
+export const LeafOne = bundleIcon(LeafOneFilled, LeafOneRegular);
+export const Link = bundleIcon(LinkFilled, LinkRegular);
+export const Open = bundleIcon(OpenFilled, OpenRegular);
+export const OrganizationHorizontal = bundleIcon(
+  OrganizationHorizontalFilled,
+  OrganizationHorizontalRegular
+);
 export const PanelLeftContract = bundleIcon(
   PanelLeftContractFilled,
   PanelLeftContractRegular
@@ -82,7 +78,23 @@ export const PanelRightExpand = bundleIcon(
   PanelRightExpandFilled,
   PanelRightExpandRegular
 );
+export const Person = bundleIcon(PersonFilled, PersonRegular);
+export const PersonFeedback = bundleIcon(
+  PersonFeedbackFilled,
+  PersonFeedbackRegular
+);
 export const Search = bundleIcon(SearchFilled, SearchRegular);
+export const Share = bundleIcon(ShareFilled, ShareRegular);
+export const TreeDeciduous = bundleIcon(
+  TreeDeciduousFilled,
+  TreeDeciduousRegular
+);
+export const TreeEvergreen = bundleIcon(
+  TreeEvergreenFilled,
+  TreeEvergreenRegular
+);
+export const WeatherMoon = bundleIcon(WeatherMoonFilled, WeatherMoonRegular);
+export const WeatherSunny = bundleIcon(WeatherSunnyFilled, WeatherSunnyRegular);
 
-//DEV NOTES:
-// 1) It's recommended to create bundleIcons for icons that nest within Fluent components and then import them into your project.
+
+

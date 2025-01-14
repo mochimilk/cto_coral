@@ -16,7 +16,7 @@ interface ContentToolbarProps {
   commandKey?: string; // Optional for shortcut hints
   children?: React.ReactNode; // All nested components
   panelConfig?: "left" | "right" | "both"; // Control which panel buttons to show
-}
+} 
 
 const ContentToolbar: React.FC<ContentToolbarProps> = ({
   isPanelOpen,

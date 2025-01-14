@@ -5,7 +5,7 @@ import "./Styles/App.css";
 import "./Modules/Panels/Panels.css";
 import "./Modules/Content/Content.css"
 import HomePage from "./Pages/HomePage.tsx";
-import DevelopersPage from "./Pages/Developers/DevelopersPage.tsx";
+import DefaultPage from "./Pages/DefaultPage/DefaultPage.tsx";
 import DesignersPage from "./Pages/DesignersPage.tsx";
 import ProductManagersPage from "./Pages/ProductManagersPage.tsx";
 import NotFound from "./Pages/NotFound.tsx";
@@ -42,37 +42,15 @@ const App: React.FC<AppProps> = ({ isDarkMode, toggleTheme }) => {
         {/* Main Layout */}
         <main>
           <Routes>
-            <Route path="/" element={<Navigate to="/home" />} />
-            <Route path="/home" element={<HomePage />} /> {/* Default route */}
-            <Route path="/developers/*" element={<DevelopersPage />} />
-            <Route path="/designers/*" element={<DesignersPage />} />
-            <Route path="/product-managers/*" element={<ProductManagersPage />} />
+            <Route path="/" element={<Navigate to="/default" />} /> {/* Default route (i.e., landing page) */}
+            <Route path="/home" element={<HomePage />} /> 
+            <Route path="/default" element={<DefaultPage />} />
+            <Route path="/designers" element={<DesignersPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
       </Router>
 
-      {/* Hotkey Overlay */}
-      {/* {showHotkeyOverlay && (
-        <div className="hotkey-overlay">
-          <Body1>System</Body1>
-          <div>
-            <Tag appearance="outline">{modifierKey}</Tag> +{" "}
-            <Tag appearance="outline">D</Tag> : Theme
-          </div>
-          <Body1>View</Body1>
-          <div>
-            <Tag appearance="outline">{modifierKey}</Tag> +{" "}
-            <Tag appearance="outline">shift</Tag> +{" "}
-            <Tag appearance="outline">←</Tag> : Left panel
-          </div>
-          <div>
-            <Tag appearance="outline">{modifierKey}</Tag> +{" "}
-            <Tag appearance="outline">shift</Tag> +{" "}
-            <Tag appearance="outline">→</Tag> : Right panel
-          </div>
-        </div>
-      )} */}
     </div>
   );
 };
