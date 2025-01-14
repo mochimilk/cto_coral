@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/cto_coral/static/css/main.6498971d.css",
+    "main.js": "/cto_coral/static/js/main.4c48fad5.js",
+    "index.html": "/cto_coral/index.html",
+    "static/media/MsftColor.svg": "/cto_coral/static/media/MsftColor.02b2f4f8f484a108d2cc6d622608baf5.svg",
+    "main.6498971d.css.map": "/cto_coral/static/css/main.6498971d.css.map",
+    "main.4c48fad5.js.map": "/cto_coral/static/js/main.4c48fad5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6498971d.css",
+    "static/js/main.4c48fad5.js"
+  ]
+}
