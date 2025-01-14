@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/cto_coral/static/css/main.6afd689a.css",
+    "main.css": "/cto_coral/static/css/main.efe62913.css",
     "main.js": "/cto_coral/static/js/main.e79fda5a.js",
     "index.html": "/cto_coral/index.html",
     "static/media/MsftColor.svg": "/cto_coral/static/media/MsftColor.02b2f4f8f484a108d2cc6d622608baf5.svg",
-    "main.6afd689a.css.map": "/cto_coral/static/css/main.6afd689a.css.map",
+    "main.efe62913.css.map": "/cto_coral/static/css/main.efe62913.css.map",
     "main.e79fda5a.js.map": "/cto_coral/static/js/main.e79fda5a.js.map"
   },
   "entrypoints": [
-    "static/css/main.6afd689a.css",
+    "static/css/main.efe62913.css",
     "static/js/main.e79fda5a.js"
   ]
 }
