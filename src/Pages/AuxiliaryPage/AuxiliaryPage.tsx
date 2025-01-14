@@ -5,9 +5,9 @@
 import * as React from "react";
 
 // Component imports
-import Content from "./DefaultPageContent.tsx";
-import PanelLeft from "./DefaultPagePanelLeft.tsx";
-import PanelRight from "./DefaultPagePanelRight.tsx";
+import Content from "./AuxiliaryPageContent.tsx";
+import PanelLeft from "./AuxiliaryPagePanelLeft.tsx";
+import PanelRight from "./AuxiliaryPagePanelRight.tsx";
 
 // AppHooks
 import { useAppHooks } from "../../Hooks/useAppHooks.tsx";
@@ -53,7 +53,7 @@ const Page: React.FC = () => {
 
       {/* PanelRight
        ** To populate its contents, go to ./src/Modules/PanelRight.tsx */}
-      {isRightPanelOpen && (
+      {/* {isRightPanelOpen && (
         <div className="panelRight" style={{ width: `${rightPanelWidth}px` }}>
           <div
             className="resize-handle-right"
@@ -61,7 +61,7 @@ const Page: React.FC = () => {
           />
           <PanelRight />
         </div>
-      )}
+      )} */}
     </div>
   );
 };

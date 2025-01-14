@@ -14,7 +14,7 @@ const PanelLeft: React.FC = () => {
       {/* PanelToolbar */}
       <PanelToolbar
         icon={null}
-        header="Panel"
+        header="Default Panel"
       >
       <Button
         icon={<MoreHorizontalRegular />}

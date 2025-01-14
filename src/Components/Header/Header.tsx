@@ -22,6 +22,7 @@ import {
   Person,
   ArrowExit,
   Share,
+  Cube,
 } from "../../Imports/bundleIcons.tsx";
 import MsftLogo from "../../Imports/MsftColor.svg";
 import "./Header.css";
@@ -35,13 +36,14 @@ interface HeaderPageProps {
 
 const tabConfigs = [
   {
-    icon: <Flow />, // Import bundle icon
+    icon: <Cube />, // Import bundle icon
     value: "default", // Route path defined in App.tsx
     label: "Default", // Visible label on UI
   },
   {
-    value: "designers",
-    label: "Designers",
+    icon: <Flow />,
+    value: "auxiliary",
+    label: "Auxiliary",
   },
   // Add more
 ];
@@ -55,14 +57,14 @@ const HeaderPage: React.FC<HeaderPageProps> = ({ toggleTheme, isDarkMode }) => {
   const tabRoutes: { [key: string]: TabValue } = {
     "/home": "home",
     "/default": "default",
-    "/designers": "designers",
+    "/auxiliary": "auxiliary",
   };
 
   // Get the current tab based on the route
   const currentTab =
     Object.keys(tabRoutes).find((route) =>
       location.pathname.startsWith(route)
-    ) || "/home"; // Default to "designers"
+    ) || "/home"; // Default to "home"
 
   const handleTabChange = (
     _: React.SyntheticEvent,
@@ -72,10 +74,7 @@ const HeaderPage: React.FC<HeaderPageProps> = ({ toggleTheme, isDarkMode }) => {
       (key) => tabRoutes[key] === data.value
     );
     if (newRoute) {
-      // Redirect "Developers" to its default nested route
-      navigate(
-        newRoute === "/developers" ? "/developers/installation" : newRoute
-      );
+      navigate(newRoute);
     }
   };
 

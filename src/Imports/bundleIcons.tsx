@@ -1,5 +1,6 @@
 //DEV NOTES:
-// 1) It's recommended to create bundleIcons for icons that nest within Fluent components and then import them into your project.
+//It's recommended to create bundleIcons for icons that nest within Fluent components and then import them into your project.
+// See full catalog of icons at https://react.fluentui.dev/?path=/docs/icons-catalog--docs.
 
 import {
   ArrowExitFilled,
@@ -8,6 +9,8 @@ import {
   BeakerRegular,
   CodeFilled,
   CodeRegular,
+  CubeFilled,
+  CubeRegular,
   DesignIdeasFilled,
   DesignIdeasRegular,
   FlowFilled,
@@ -52,6 +55,7 @@ import {
 export const ArrowExit = bundleIcon(ArrowExitFilled, ArrowExitRegular);
 export const Beaker = bundleIcon(BeakerFilled, BeakerRegular);
 export const Code = bundleIcon(CodeFilled, CodeRegular);
+export const Cube = bundleIcon(CubeFilled, CubeRegular);
 export const DesignIdeas = bundleIcon(DesignIdeasFilled, DesignIdeasRegular);
 export const Flow = bundleIcon(FlowFilled, FlowRegular);
 export const FolderOpen = bundleIcon(FolderOpenFilled, FolderOpenRegular);

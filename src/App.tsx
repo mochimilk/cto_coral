@@ -6,7 +6,7 @@ import "./Components/Panels/Panels.css";
 import "./Components/Content/Content.css";
 import HomePage from "./Pages/HomePage.tsx";
 import DefaultPage from "./Pages/DefaultPage/DefaultPage.tsx";
-import DesignersPage from "./Pages/DesignersPage.tsx";
+import AuxiliaryPage from "./Pages/AuxiliaryPage/AuxiliaryPage.tsx";
 import NotFound from "./Pages/NotFound.tsx";
 import {
   HashRouter as Router,
@@ -42,7 +42,7 @@ const App: React.FC<AppProps> = ({ isDarkMode, toggleTheme }) => {
             <Route path="/" element={<Navigate to="/default" />} /> {/*Default route (i.e., landing page) */}
             <Route path="/home" element={<HomePage />} />
             <Route path="/default" element={<DefaultPage />} />
-            <Route path="/designers" element={<DesignersPage />} />
+            <Route path="/auxiliary" element={<AuxiliaryPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

@@ -1,9 +1,11 @@
 import React from "react";
 import "../../Styles/App.css";
 import { Toolbar, ToolbarButton } from "@fluentui/react-components";
-import { Link } from "../../Imports/bundleIcons.tsx";
+import { Link, Search } from "../../Imports/bundleIcons.tsx";
 import { useContentHooks } from "../../Hooks/useContentHooks.tsx";
 import ContentToolbar from "../../Hooks/useContentToolbarHooks.tsx";
+
+// Visit https://mochimilk.github.io/cto_coral_docs/index.html#/developers/content for documentation
 
 interface ContentProps {
   isPanelOpen: boolean;
@@ -24,9 +26,8 @@ const ContentDevelopers: React.FC<ContentProps> = ({
     <div className="contentContainer">
       {/*📌 Below is the setup for the content toolbar.
        ***You may remove this if your app doesn't need a toolbar. */}
-
-<ContentToolbar
-        panelConfig="both" // If your page is only using one panel, define it here with "left" or "right". Removing this defaults to both.
+      <ContentToolbar
+        panelConfig="both" // "left", "right", "both", {null}
         isPanelOpen={isPanelOpen}
         togglePanel={togglePanel}
         isRightPanelOpen={isRightPanelOpen}
@@ -35,16 +36,15 @@ const ContentDevelopers: React.FC<ContentProps> = ({
       >
         <Toolbar></Toolbar>
         <Toolbar>
-          <ToolbarButton icon={<Link />}></ToolbarButton>
+          <ToolbarButton icon={<Search />}></ToolbarButton>
         </Toolbar>
       </ContentToolbar>
 
-      {/*📌 Below is the setup for Content.
-       ***You can import just about anything into className"content" and it should show up in the content panel
-       ***Don't forget call your import above!
-       ***/}
 
-      <div className="content"></div>
+
+      <div className="content">
+        {/* Populate content here */}
+      </div>
     </div>
   );
 };
