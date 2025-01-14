@@ -1,9 +1,9 @@
 import * as React from "react";
 
 // Module imports
-import Content from "../../Modules/Content/Content.tsx";
-import PanelLeft from "../../Modules/Panels/PanelLeft.tsx";
-import PanelRight from "../../Modules/Panels/PanelRight.tsx";
+import Content from "../../Components/Content/Content.tsx";
+import PanelLeft from "../../Components/Panels/PanelLeft.tsx";
+import PanelRight from "../../Components/Panels/PanelRight.tsx";
 
 // AppHooks
 import { useAppHooks } from "../../Hooks/useAppHooks.tsx";

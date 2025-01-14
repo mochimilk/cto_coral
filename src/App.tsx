@@ -2,12 +2,11 @@ import * as React from "react";
 import { useEffect } from "react";
 import Header from "./Components/Header/Header.tsx"; // Import Header
 import "./Styles/App.css";
-import "./Modules/Panels/Panels.css";
-import "./Modules/Content/Content.css"
+import "./Components/Panels/Panels.css";
+import "./Components/Content/Content.css";
 import HomePage from "./Pages/HomePage.tsx";
 import DefaultPage from "./Pages/DefaultPage/DefaultPage.tsx";
 import DesignersPage from "./Pages/DesignersPage.tsx";
-import ProductManagersPage from "./Pages/ProductManagersPage.tsx";
 import NotFound from "./Pages/NotFound.tsx";
 import {
   HashRouter as Router,
@@ -22,7 +21,6 @@ type AppProps = {
 };
 
 const App: React.FC<AppProps> = ({ isDarkMode, toggleTheme }) => {
-  // const { showHotkeyOverlay, modifierKey } = useAppHooks();
 
   // Apply or remove the "dark-mode" class on the body element based on isDarkMode
   useEffect(() => {
@@ -36,21 +34,19 @@ const App: React.FC<AppProps> = ({ isDarkMode, toggleTheme }) => {
   return (
     <div className="app-container">
       <Router>
-      
         <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
 
         {/* Main Layout */}
         <main>
           <Routes>
-            <Route path="/" element={<Navigate to="/default" />} /> {/* Default route (i.e., landing page) */}
-            <Route path="/home" element={<HomePage />} /> 
+            <Route path="/" element={<Navigate to="/default" />} /> {/*Default route (i.e., landing page) */}
+            <Route path="/home" element={<HomePage />} />
             <Route path="/default" element={<DefaultPage />} />
             <Route path="/designers" element={<DesignersPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
       </Router>
-
     </div>
   );
 };

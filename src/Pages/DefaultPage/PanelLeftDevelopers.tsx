@@ -23,7 +23,7 @@ import {
   Code20Filled,
 } from "@fluentui/react-icons";
 
-import "../../Modules/Panels/Chat.css";
+import "../../Components/Panels/Chat.css";
 import { NavLink } from "react-router-dom";
 
 // Explicitly defines types and annotates destructured parameters to prevent TypeScript errors
